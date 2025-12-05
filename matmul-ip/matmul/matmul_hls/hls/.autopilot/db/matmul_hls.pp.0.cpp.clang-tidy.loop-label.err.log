@@ -1,0 +1,3 @@
+3 errors generated.
+Error while processing /home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp.
+clang-tidy applied 14 of 14 suggested fixes.

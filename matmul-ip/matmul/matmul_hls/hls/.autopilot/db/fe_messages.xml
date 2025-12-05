@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matmul_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=stream_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=stream_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=B type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=C type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A type=block factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=B type=block factor=16 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=C type=block factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=16" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../matmul_hls.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="matmul_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../matmul_hls.cpp:55:30" msg_body="Loop 'VITIS_LOOP_55_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_55_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../matmul_hls.cpp:11:0" msg_body="Unrolling loop 'VITIS_LOOP_55_7' (../matmul_hls.cpp:55:30) in function 'matmul_hls' completely with a factor of 128">
+        <args Factor="128" LoopLoc="../matmul_hls.cpp:55:30" LoopName="VITIS_LOOP_55_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../matmul_hls.cpp:22:9" msg_body="Applying array_partition to 'A': Block partitioning with factor 16 on dimension 2.">
+        <args Dim="2" Factor="16" Mode="Block" UOName="A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../matmul_hls.cpp:23:12" msg_body="Applying array_partition to 'B': Block partitioning with factor 16 on dimension 1.">
+        <args Dim="1" Factor="16" Mode="Block" UOName="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../matmul_hls.cpp:24:12" msg_body="Applying array_partition to 'C': Block partitioning with factor 16 on dimension 2.">
+        <args Dim="2" Factor="16" Mode="Block" UOName="C"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

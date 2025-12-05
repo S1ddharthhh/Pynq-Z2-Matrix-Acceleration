@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/home/siddharth/Project-Demo/matmul-ip/matmul",
+    "arguments": [
+      "/tools/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/home/siddharth/Project-Demo/matmul-ip/matmul_hls.cpp"
+    ],
+    "file": "/home/siddharth/Project-Demo/matmul-ip/matmul_hls.cpp"
+  }
+]

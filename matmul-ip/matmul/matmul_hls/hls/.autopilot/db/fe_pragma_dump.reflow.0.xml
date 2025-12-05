@@ -1,0 +1,38 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="../matmul_hls.cpp" line="66" pragmaType="pipeline" parentfunction="matmul_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../matmul_hls.cpp" line="53" pragmaType="pipeline" parentfunction="matmul_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../matmul_hls.cpp" line="56" pragmaType="unroll" parentfunction="matmul_hls" factor="16" skip_exit_check="0"/>
+<pragma file="../matmul_hls.cpp" line="45" pragmaType="pipeline" parentfunction="matmul_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../matmul_hls.cpp" line="37" pragmaType="pipeline" parentfunction="matmul_hls" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../matmul_hls.cpp" line="16" pragmaType="interface" parentfunction="matmul_hls" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../matmul_hls.cpp" line="18" pragmaType="interface" parentfunction="matmul_hls" mode="axis" port="stream_in" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../matmul_hls.cpp" line="19" pragmaType="interface" parentfunction="matmul_hls" mode="axis" port="stream_out" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../matmul_hls.cpp" line="26" pragmaType="bind_storage" parentfunction="matmul_hls" op="666" impl="22" latency="-1" variable="A"/>
+<pragma file="../matmul_hls.cpp" line="27" pragmaType="bind_storage" parentfunction="matmul_hls" op="666" impl="22" latency="-1" variable="B"/>
+<pragma file="../matmul_hls.cpp" line="28" pragmaType="bind_storage" parentfunction="matmul_hls" op="666" impl="22" latency="-1" variable="C"/>
+<pragma file="../matmul_hls.cpp" line="30" pragmaType="array_partition" parentfunction="matmul_hls" dim="2" factor="16" mode="block" dynamic="0" variable="A"/>
+<pragma file="../matmul_hls.cpp" line="31" pragmaType="array_partition" parentfunction="matmul_hls" dim="1" factor="16" mode="block" dynamic="0" variable="B"/>
+<pragma file="../matmul_hls.cpp" line="32" pragmaType="array_partition" parentfunction="matmul_hls" dim="2" factor="16" mode="block" dynamic="0" variable="C"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+</pragmas>

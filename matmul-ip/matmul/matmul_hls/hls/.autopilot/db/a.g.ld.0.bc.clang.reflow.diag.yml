@@ -1,0 +1,86 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../matmul_hls.cpp, Line: 55, Column: 30 }
+Function:        _Z10matmul_hlsRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_55_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../matmul_hls.cpp, Line: 11, Column: 0 }
+Function:        _Z10matmul_hlsRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_7
+  - String:          ''' ('
+  - LoopLoc:         '../matmul_hls.cpp:55:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matmul_hls
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../matmul_hls.cpp, Line: 22, Column: 9 }
+Function:        _Z10matmul_hlsRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../matmul_hls.cpp, Line: 23, Column: 12 }
+Function:        _Z10matmul_hlsRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../matmul_hls.cpp, Line: 24, Column: 12 }
+Function:        _Z10matmul_hlsRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

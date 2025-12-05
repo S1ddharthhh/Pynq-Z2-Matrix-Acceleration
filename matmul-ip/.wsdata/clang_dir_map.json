@@ -1,0 +1,6 @@
+{
+  "workspaceRoot": "/home/siddharth/Project-Demo/matmul-ip",
+  "mapping": {
+    "matmul_hls.cpp": "matmul"
+  }
+}

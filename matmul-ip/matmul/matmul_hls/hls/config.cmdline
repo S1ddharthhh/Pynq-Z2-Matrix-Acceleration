@@ -1,0 +1,3 @@
+relativeroot=/home/siddharth/Project-Demo/matmul-ip/matmul
+original_argv=--mode hls --package --config /home/siddharth/Project-Demo/matmul-ip/matmul/hls_config.cfg --work_dir matmul_hls 
+

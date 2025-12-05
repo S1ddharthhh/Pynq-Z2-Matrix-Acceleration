@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 15 23:27:25 2025
+# Process ID: 5246
+# Current directory: /home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.runs/design_1_matmul_hls_0_0_synth_1
+# Command line: vivado -log design_1_matmul_hls_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_matmul_hls_0_0.tcl
+# Log file: /home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.runs/design_1_matmul_hls_0_0_synth_1/design_1_matmul_hls_0_0.vds
+# Journal file: /home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.runs/design_1_matmul_hls_0_0_synth_1/vivado.jou
+# Running On        :zenbook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.3 LTS
+# Processor Detail  :Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency     :4300.000 MHz
+# CPU Physical cores:14
+# CPU Logical cores :18
+# Host memory       :16097 MB
+# Swap memory       :4294 MB
+# Total Virtual     :20392 MB
+# Available Virtual :16950 MB
+#-----------------------------------------------------------
+source design_1_matmul_hls_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.793 ; gain = 19.840 ; free physical = 5463 ; free virtual = 12347
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/siddharth/Project-Demo/matmul-ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/siddharth/Project-Demo/matmul-ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.runs/design_1_matmul_hls_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_matmul_hls_0_0
+Command: synth_design -top design_1_matmul_hls_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5810
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2168.820 ; gain = 411.746 ; free physical = 171 ; free virtual = 2333
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_matmul_hls_0_0' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ip/design_1_matmul_hls_0_0/synth/design_1_matmul_hls_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_A_RAM_2P_BRAM_1R1W' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_A_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_A_RAM_2P_BRAM_1R1W' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_A_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_C_RAM_2P_BRAM_1R1W' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_C_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_C_RAM_2P_BRAM_1R1W' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_C_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_flow_control_loop_pipe_sequential_init' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_flow_control_loop_pipe_sequential_init' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_51_5_VITIS_LOOP_52_6' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_51_5_VITIS_LOOP_52_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_mul_32s_32s_32_2_1' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_mul_32s_32s_32_2_1' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_51_5_VITIS_LOOP_52_6' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_51_5_VITIS_LOOP_52_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_64_8_VITIS_LOOP_65_9' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_64_8_VITIS_LOOP_65_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_sparsemux_33_4_32_1_1' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_sparsemux_33_4_32_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_sparsemux_33_4_32_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_sparsemux_33_4_32_1_1' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_sparsemux_33_4_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_64_8_VITIS_LOOP_65_9' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_64_8_VITIS_LOOP_65_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_control_s_axi' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_control_s_axi.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_control_s_axi' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_regslice_both' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_regslice_both' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_regslice_both__parameterized0' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_regslice_both__parameterized0' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matmul_hls_regslice_both__parameterized1' [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls_regslice_both__parameterized1' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matmul_hls' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_matmul_hls_0_0' (0#1) [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ip/design_1_matmul_hls_0_0/synth/design_1_matmul_hls_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/siddharth/Project-Demo/matmul-ip/matrixmaltiplication/matrixmaltiplication.gen/sources_1/bd/design_1/ipshared/a751/hdl/verilog/matmul_hls_control_s_axi.v:254]
+WARNING: [Synth 8-7129] Port AWADDR[1] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[31] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[15] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[14] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[13] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[12] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[11] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[10] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[9] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[8] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[6] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[5] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[4] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[3] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[2] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[3] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[2] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[1] in module matmul_hls_control_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module matmul_hls_mul_32s_32s_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[3] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[2] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[1] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[3] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[2] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[1] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TLAST[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_44_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[3] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[2] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[1] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TKEEP[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[3] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[2] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[1] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TSTRB[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port stream_in_TLAST[0] in module matmul_hls_matmul_hls_Pipeline_VITIS_LOOP_35_1_VITIS_LOOP_36_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module matmul_hls_C_RAM_2P_BRAM_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module matmul_hls_A_RAM_2P_BRAM_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2296.758 ; gain = 539.684 ; free physical = 171 ; free virtual = 1479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2308.633 ; gain = 551.559 ; free physical = 197 ; free virtual = 1436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2308.633 ; gain = 551.559 ; free physical = 197 ; free virtual = 1436
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2308.633 ; gain = 0.000 ; free physical = 181 ; free virtual = 1056

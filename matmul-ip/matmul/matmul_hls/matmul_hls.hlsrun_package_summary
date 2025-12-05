@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/matmul_hls.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Sep 15 23:20:20 2025",
+ "timestampMillis": "1757958620119",
+ "buildStep": {
+  "cmdId": "ecf62b57-3c31-4e82-94ce-5a0a6a3601bb",
+  "name": "vitis-run",
+  "logFile": "/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/logs/matmul_hls.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/siddharth/Project-Demo/matmul-ip/matmul/hls_config.cfg --work_dir matmul_hls ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/siddharth/Project-Demo/matmul-ip/matmul/hls_config.cfg",
+   "--work_dir",
+   "matmul_hls"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/siddharth/Project-Demo/matmul-ip/matmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 15 23:20:20 2025",
+ "timestampMillis": "1757958620119",
+ "status": {
+  "cmdId": "ecf62b57-3c31-4e82-94ce-5a0a6a3601bb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Sep 15 23:20:23 2025",
+ "timestampMillis": "1757958623257",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matmul_hls",
+     "file": "/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/matmul_hls.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/siddharth/Project-Demo/matmul-ip/matmul_hls.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Sep 15 23:20:23 2025",
+ "timestampMillis": "1757958623258",
+ "buildStep": {
+  "cmdId": "ea7b90d5-e920-4ef7-a214-2e1ccd2f528f",
+  "name": "export_design",
+  "logFile": "/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/siddharth/Project-Demo/matmul-ip/matmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 15 23:20:23 2025",
+ "timestampMillis": "1757958623258",
+ "status": {
+  "cmdId": "ea7b90d5-e920-4ef7-a214-2e1ccd2f528f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 15 23:20:42 2025",
+ "timestampMillis": "1757958642171",
+ "status": {
+  "cmdId": "ea7b90d5-e920-4ef7-a214-2e1ccd2f528f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Sep 15 23:20:42 2025",
+ "timestampMillis": "1757958642292",
+ "status": {
+  "cmdId": "ecf62b57-3c31-4e82-94ce-5a0a6a3601bb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Sep 15 23:20:42 2025",
+ "timestampMillis": "1757958642293",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Sep 15 23:20:42 2025",
+ "timestampMillis": "1757958642294",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

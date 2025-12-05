@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Sep 15 23:20:24 2025
+# Process ID: 255692
+# Current directory: /home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/impl/ip/vivado.log
+# Journal file: /home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/impl/ip/vivado.jou
+# Running On        :zenbook
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.3 LTS
+# Processor Detail  :Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency     :400.000 MHz
+# CPU Physical cores:14
+# CPU Logical cores :18
+# Host memory       :16097 MB
+# Swap memory       :4294 MB
+# Total Virtual     :20392 MB
+# Available Virtual :16338 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

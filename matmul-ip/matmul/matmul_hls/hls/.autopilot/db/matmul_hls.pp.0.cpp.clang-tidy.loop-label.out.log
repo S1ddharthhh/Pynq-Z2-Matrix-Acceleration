@@ -1,0 +1,79 @@
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:1443:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:1443:7: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2417:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2417:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2431:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2431:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2445:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:2445:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:4074:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:4074:7: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9046:42: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=A type=ram_2p impl=bram
+                                         ^
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9047:42: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=B type=ram_2p impl=bram
+                                         ^
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9048:42: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=C type=ram_2p impl=bram
+                                         ^
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9055:2: warning: Added loop label VITIS_LOOP_35_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 128; i++) {
+ ^~~
+ VITIS_LOOP_35_1: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9055:2: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9056:9: warning: Added loop label VITIS_LOOP_36_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 128; j++) {
+        ^~~
+        VITIS_LOOP_36_2: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9056:9: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9063:5: warning: Added loop label VITIS_LOOP_43_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < 128; i++) {
+    ^~~
+    VITIS_LOOP_43_3: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9063:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9064:9: warning: Added loop label VITIS_LOOP_44_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < 128; j++) {
+        ^~~
+        VITIS_LOOP_44_4: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9064:9: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9071:5: warning: Added loop label VITIS_LOOP_51_5:   [xilinx-label-all-loops]
+    for (int i = 0; i < 128; i++) {
+    ^~~
+    VITIS_LOOP_51_5: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9071:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9072:9: warning: Added loop label VITIS_LOOP_52_6:   [xilinx-label-all-loops]
+        for (int j = 0; j < 128; j++) {
+        ^~~
+        VITIS_LOOP_52_6: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9072:9: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9075:13: warning: Added loop label VITIS_LOOP_55_7:   [xilinx-label-all-loops]
+            for (int k = 0; k < 128; k++) {
+            ^~~
+            VITIS_LOOP_55_7: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9075:13: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9084:5: warning: Added loop label VITIS_LOOP_64_8:   [xilinx-label-all-loops]
+    for (int i = 0; i < 128; i++) {
+    ^~~
+    VITIS_LOOP_64_8: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9084:5: note: FIX-IT applied suggested code changes
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9085:9: warning: Added loop label VITIS_LOOP_65_9:   [xilinx-label-all-loops]
+        for (int j = 0; j < 128; j++) {
+        ^~~
+        VITIS_LOOP_65_9: 
+/home/siddharth/Project-Demo/matmul-ip/matmul/matmul_hls/hls/.autopilot/db/matmul_hls.pp.0.cpp:9085:9: note: FIX-IT applied suggested code changes
